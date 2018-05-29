@@ -27,6 +27,29 @@ describe('List', () => {
     expect( myList.length ).toEqual(2);
   });
 
+  it('shift() moves all elements down one index. Length property is shortened by 1.', () => {
+    let myList = loadList();
+    myList.shift();
+    expect( myList.length ).toEqual(2);
+  });
+
+  it('shift() moves all elements down one index. First index element is deleted and returned.', () => {
+    let myList = loadList();
+    expect( myList.shift() ).toEqual(testArray[0]);
+  });
+
+  it('unshift() adds arguments as elements at beginning of array and returns the new array.', () => {
+    let myList = loadList();
+    myList.unshift(testArray[0]);
+    expect( myList.length ).toEqual(testArray.length+1);
+  });
+
+  it('unshift() adds arguments as elements at beginning of array and returns the new array.', () => {
+    let myList = loadList();
+    myList.unshift(testArray[1]);
+    expect( myList[0] ).toEqual(testArray[1]);
+  });
+
   it('forEach() does not run without callback', () => {
     function badForEach() {
       let myList = loadList();
@@ -58,5 +81,29 @@ describe('List', () => {
     expect( newList[0] ).toEqual( `0 -- ${testArray[0]}` );
 
   });
+
+  it('filter() requires a callback function', () => {
+    let myList = loadList();
+    expect( myList.filter() ).toBeUndefined();
+  });
+
+  it('filter() returns a new list filtered by the callback', () => {
+
+    let myList = loadList();
+    let newList = myList.filter( (val,i) => {
+      return val === testArray[0];
+    });
+
+    expect( newList.length ).toEqual( 1 )
+    expect( newList[0] ).toEqual( testArray[0] );
+
+  });
+
+  it('reduce() requires a callback function', () => {
+    let myList = loadList();
+    expect( myList.filter() ).toBeUndefined();
+  });
+
+  
 
 });

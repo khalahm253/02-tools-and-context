@@ -1,0 +1,27 @@
+{
+  "name": "02-tools-and-context",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) 02: Tools and Context ======",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalahm253/02-tools-and-context.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalahm253/02-tools-and-context/issues"
+  },
+  "homepage": "https://github.com/khalahm253/02-tools-and-context#readme",
+  "dependencies": {
+    "jest": "^23.0.1",
+    "lint": "^1.1.2"
+  }
+}
