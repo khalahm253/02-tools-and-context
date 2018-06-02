@@ -2,6 +2,10 @@
 ======
 
 
+
+Travis Link : https://travis-ci.com/khalahm253/02-tools-and-context
+
+
 This a module that focuses on making methods, that match the built array methods that we are so used to, from scratch.
 
 This list module includes array methods such as push(), pop(), shift(), , forEach(), map(), .
