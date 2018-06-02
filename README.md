@@ -1,52 +1,20 @@
 ![cf](https://i.imgur.com/7v5ASc8.png) 02: Tools and Context
 ======
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
 
-## Configuration
-Configure the root of your repository with the following files and directories. Thoughtfully name and organize any additional configuration or module files.
-* **README.md** - contains documentation
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
-* **.eslintrc.json** - contains the course linter configuratoin
-* **.eslintignore** - contains the course linter ignore configuration
-* **.travis.yml** - travis-ci configuration file
-* **package.json** - contains npm package config
-  * create a `lint` script for running eslint
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **\_\_test\_\_/** - contains unit tests
+This a module that focuses on making methods, that match the built array methods that we are so used to, from scratch.
 
-## Feature Tasks
+This list module includes array methods such as push(), pop(), shift(), , forEach(), map(), .
 
-#### List Module
-  * implement a List constructor using a constructor, factory, or class
-  * implement the length property
-  * implement `push()`, `pop()`, `shift()`, and `unshift()` methods on the List prototype
-  * implement `forEach()`, `map()`, `filter()`, and `reduce()` as pure methods on the List prototype
-  * implement `slice()`, and `splice()` as methods on the List prototype
-  * Do not use any built-in array methods to do this
+In this module, I utilize Test Driven Development to make sure our module operated as expected and I integrated with Travis to verify successful builds as I deploy to GitHub.
+
+
   
-#### Stretch Goals
-  * Repeat the above process, using call/apply/bind to interface with built-in array methods.
-  * e.g.
-  `map(list, callback) { 
-    return Array.prototype.map.call( list, callback ); 
-  }`
+
 
 ## Testing
-Create a NodeJS module in the \_\_test\_\_/ directory named `list.test.js` that asserts the correctness of the list module.
 
-Use the `describe` and `it` (or `test`) methods to define descriptive tests and increase readablity
-Each `it` callback should aim to test a small, well defined, feature of a function - this may include:
   * tests that ensure the list module functions correctly with error-check parameters
   * tests that the correct errors are thrown with invalid arguments exist
   * tests to ensure that the list module functions return the correct results when invoked with valid arguments
 
-##  Documentation
-Include your travis badge at the top of your `README.md` file
-In your `README.md`, describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and it's behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.
